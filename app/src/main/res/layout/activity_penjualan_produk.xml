@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".penjualan_produk">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/background"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_bluedeep"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penjualan Produk Lain"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="32dp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/skalapenjualan"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/background"
+            android:layout_marginRight="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/surveypelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_toRightOf="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#0F4C81"
+                        android:textStyle="bold"
+                        android:text="Skala Penjualan"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/coverage"
+                        android:text="Coverage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#9E9E9E"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+                    <TextView
+                        android:text="Kontribusi Penjualan AMDK dalam 1 bulan (in value)"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#9E9E9E"/>
+
+                    <TextView
+                        android:id="@+id/kontribusi"
+                        android:layout_width="200dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#212121"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/jumlahpelanggan"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/skalapenjualan"
+            android:layout_marginRight="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold"
+                    android:text="Pelanggan"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+
+                <ListView
+                    android:id="@+id/totalpelanggan"
+                    android:layout_marginTop="16dp"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/produklain"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/jumlahpelanggan"
+            android:layout_marginRight="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold"
+                    android:text="Produk Lain"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+
+                <ListView
+                    android:id="@+id/totalproduklain"
+                    android:layout_marginTop="16dp"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Produk yang tersedia di toko"
+                    android:layout_marginTop="16dp"/>
+
+                <ListView
+                    android:id="@+id/produktersedialist"
+                    android:layout_width="wrap_content"
+                    android:divider="@null"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/merekAmdk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/produklain"
+            android:layout_marginRight="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold"
+                    android:text="Merek AMDK"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+
+                <ListView
+                    android:id="@+id/amdklist"
+                    android:layout_marginTop="16dp"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+</ScrollView>
+

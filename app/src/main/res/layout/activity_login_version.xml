@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_version">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lineargambar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginTop="40dp"
+                android:text="Hallo,\nSelamat Datang"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="#212121"
+                android:textSize="45dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idpelanggan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="#0F4C81"
+                android:layout_below="@+id/textView"
+                >
+
+                <EditText
+                    android:id="@+id/editidpelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="ID Pelanggan"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="41dp"
+                    tools:layout_editor_absoluteY="442dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nomortelepon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="#0F4C81"
+                android:layout_below="@+id/idpelanggan"
+                >
+
+                <EditText
+                    android:id="@+id/editnomortelepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Nomor Telepon"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/nomortelepon">
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0f4c81"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Login"
+                    android:textSize="14dp"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.943" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tekslupalogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlogin"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:text="Lupa Akun ? / Bantuan"
+                android:textColor="#0F4C81"
+                android:textSize="14dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lineargambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/logotvipasa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Mobile Surveillance  © 2022 ICT Department, TVIP" />
+    </LinearLayout>
+</RelativeLayout>

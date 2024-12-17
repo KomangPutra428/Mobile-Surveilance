@@ -1,0 +1,105 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/add.xml" value="0.17" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/armada_icon.xml" value="0.1095" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/arrow_right.xml" value="0.1095" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/dotted.xml" value="0.1105" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/edit.xml" value="0.1455" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/edit_armada.xml" value="0.161" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/editbox.xml" value="0.143" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/filter.xml" value="0.1325" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/galon_kosong.xml" value="0.1595" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/garis.xml" value="0.1595" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/group_team.xml" value="0.151" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/ic_galon.xml" value="0.17" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/ic_line_axis.xml" value="0.1595" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/icon.xml" value="0.1105" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/icon_kamera.xml" value="0.17" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/icon_search.xml" value="0.151" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/kardus.xml" value="0.1435" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/list.xml" value="0.1365" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/minus.xml" value="0.1435" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/next.xml" value="0.14" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/query_stats.xml" value="0.1595" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/refresh.xml" value="0.143" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/squared_corner.xml" value="0.1105" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/survey_icon.xml" value="0.151" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/toko.xml" value="0.1105" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/warning.xml" value="0.13" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/drawable/warning_icon.xml" value="0.17" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_armada_operasional.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_berhasil_rasio_galon.xml" value="0.18478260869565216" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_detail_galon_kosong.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_detail_gudang.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_detail_kompetitor.xml" value="0.22" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_detail_memento.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_detail_pelanggan.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_draft_kompetitor.xml" value="0.16367521367521368" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_foto_outlet.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_gudang.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_list_all_details.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_list_foto_outlet.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_list_galon_kosong.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_list_item_memento.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_list_memento.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_list_survey_kompetitor.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_login.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_login_version.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_mapping_outlet.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_menu_profile.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_menu_survey.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_pelanggan_outlet.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_pencatatan_outlet.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_penjualan_produk.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_penjualan_produk_lain.xml" value="0.11911231884057971" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_profile_outlet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_tambah_memento.xml" value="0.2" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_update_ktp.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_update_npwp.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/activity_update_npwp_ulang.xml" value="0.18478260869565216" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/add_kompetitor.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/add_pelanggan.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/armada.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/edit_memento.xml" value="0.18" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_armada.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_date.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_draft_kompetitor.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_galon_kosong.xml" value="0.5" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_memento.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_pelanggan.xml" value="0.18" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_pelanggan_outlet.xml" value="0.1" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_pelanggan_owner.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_produk.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_saved_kompetitor.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_sub_draft.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_sub_saved.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_total_pelanggan.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/list_item_tren.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/mapping.xml" value="0.17" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/namaalamat_pelanggan.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/pilih_range_tanggal.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/pilih_tanggal.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/produkkami.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/produklain.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/ICT-PROGRAMER/AndroidStudioProjects/surveylance/app/src/main/res/layout/simple_list_item.xml" value="0.18840579710144928" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

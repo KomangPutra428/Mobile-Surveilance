@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_outlet">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="8dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/biodatabar"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            app:titleTextColor="#212121"
+            android:layout_height="56dp"
+            app:title="Profile Outlet"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:id="@+id/warning_frame"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="#EFF8FF">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/warning"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Pastikan pengisian data outlet Anda sesuai."/>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/profilelayout"
+        android:layout_above="@+id/linearbutton"
+        android:layout_below="@id/warning_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_below="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp">
+                <TextView
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Jenis Transaksi"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/alamatoutlet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    app:endIconMode="custom">
+                    <EditText
+                        android:id="@+id/editalamatoutlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Alamat Outlet"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp"
+                        android:autofillHints="" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/kotaoutlet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+                    <AutoCompleteTextView
+                        android:id="@+id/editkotaoutlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Kota"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/kecamatanoutlet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+                    <AutoCompleteTextView
+                        android:id="@+id/editkecamatanoutlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Kecamatan"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/kelurahanoutlet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+                    <AutoCompleteTextView
+                        android:id="@+id/editkelurahanoutlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Kelurahan"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginTop="24dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/RToutlet"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="66dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:boxStrokeColor="#0F4C81">
+                        <EditText
+                            android:id="@+id/editRToutlet"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:focusable="false"
+                            android:maxLength="3"
+                            android:text="00"
+                            android:longClickable="false"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="RT"
+                            android:singleLine="true"
+                            android:textSize="16dp"
+                            tools:layout_editor_absoluteX="41dp"
+                            tools:layout_editor_absoluteY="442dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/RWoutlet"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="66dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_toRightOf="@+id/RToutlet"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:boxStrokeColor="#0F4C81">
+                        <EditText
+                            android:id="@+id/editRWoutlet"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:focusable="false"
+                            android:maxLength="3"
+                            android:text="00"
+                            android:longClickable="false"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="RW"
+                            android:singleLine="true"
+                            android:textSize="16dp"
+                            tools:layout_editor_absoluteX="41dp"
+                            tools:layout_editor_absoluteY="442dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/pembatas"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/garis"
+                        android:layout_toRightOf="@+id/RWoutlet"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/KodePosoutlet"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_toRightOf="@+id/pembatas"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:boxStrokeColor="#0F4C81">
+                        <EditText
+                            android:id="@+id/editKodePosoutlet"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingLeft="10dp"
+                            android:inputType="number"
+                            android:focusable="false"
+                            android:longClickable="false"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Kode Pos"
+                            android:singleLine="true"
+                            android:textSize="16dp"
+                            tools:layout_editor_absoluteX="41dp"
+                            tools:layout_editor_absoluteY="442dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/teleponoutlet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+                    <EditText
+                        android:id="@+id/editteleponoutlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="number"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Telepon Outlet"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tanggallahir"
+                    android:visibility="gone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="15dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    app:endIconMode="custom">
+                    <EditText
+                        android:id="@+id/edittanggallahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Tanggal Lahir Pemilik"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp"
+                        android:autofillHints="" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Jarak Tempuh Depo - Outlet"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jaraktempuh"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    app:endIconMode="custom">
+                    <EditText
+                        android:id="@+id/editjaraktempuh"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="KM"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp"
+                        android:autofillHints="" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Karyawan"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/karyawan"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    app:endIconMode="custom">
+                    <EditText
+                        android:id="@+id/editkaryawan"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Jumlah Orang"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp"
+                        android:autofillHints="" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Berlangganan"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/berlangganan"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    app:endIconMode="custom">
+                    <EditText
+                        android:id="@+id/editberlangganan"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Mulai Berlangganan"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp"
+                        android:autofillHints="" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Kategori Outlet"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <TableRow>
+                        <CheckBox
+                            android:id="@+id/check1"
+                            android:text="O1 - STAR OUTLET"
+                            android:layout_column="0" />
+                        <CheckBox
+                            android:id="@+id/check2"
+                            android:text="O2 - WHOLESALER"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow>
+                        <CheckBox
+                            android:id="@+id/check3"
+                            android:text="O3 - MANAGE OUTLET (MO)"
+                            android:padding="3dip" />
+                        <CheckBox
+                            android:id="@+id/check4"
+                            android:text="M1 - AHS"
+                            android:padding="3dip" />
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone">
+                        <CheckBox
+                            android:id="@+id/check5"
+                            android:text="W AQUA GALLON"
+                            android:padding="3dip" />
+                        <CheckBox
+                            android:id="@+id/check6"
+                            android:text="RETAIL"
+                            android:padding="3dip" />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Bersedia melakukan bongkar muat pada malam hari ?"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <TableRow>
+                        <CheckBox
+                            android:id="@+id/ya"
+                            android:text="YA"
+                            android:layout_column="0" />
+                        <CheckBox
+                            android:id="@+id/tidak"
+                            android:text="TIDAK"
+                            android:layout_column="1" />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Lokasi Sekitar Outlet (Boleh pilih lebih dari 1)"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <CheckBox
+                    android:id="@+id/lokasi1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perumahan/Perkampungan/Desa"
+                    android:layout_column="0" />
+                <CheckBox
+                    android:id="@+id/lokasi2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perkantoran/Gedung Pemerintahan/ Sekolah &amp; Universitas/Kawasan Industri"
+                    android:layout_column="1" />
+                <CheckBox
+                    android:id="@+id/lokasi3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didalam/Sekitar Pasar/ Pusar Perbelanjaan (Mall)"
+                    android:layout_column="0" />
+                <CheckBox
+                    android:id="@+id/lokasi4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titik transit transportasi (Bandara/ Terminal/ Stasiun dsb)"
+                    android:layout_column="1" />
+                <CheckBox
+                    android:id="@+id/lokasi5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Wisata/ Area rekreasi"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Ketersediaan Tempat Parkir"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <RadioGroup
+                    android:id="@+id/buttonparkir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <RadioButton
+                        android:id="@+id/parkir1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak bisa parkir mobil (dipinggir jalan)"
+                        android:layout_column="0" />
+                    <RadioButton
+                        android:id="@+id/parkir2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parkir 1 mobil"
+                        android:layout_column="1" />
+                    <RadioButton
+                        android:id="@+id/parkir3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parkir 2 mobil"
+                        android:layout_column="0" />
+
+                    <RadioButton
+                        android:id="@+id/parkir4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parkir lebih dari 2 mobil"
+                        android:layout_column="1" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Cara mendapatkan order paling banyak (Boleh pilih lebih dari 1)"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <CheckBox
+                    android:id="@+id/order1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Canvasing"
+                    android:layout_column="0" />
+                <CheckBox
+                    android:id="@+id/order2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freelancer/ sales nokang"
+                    android:layout_column="1" />
+                <CheckBox
+                    android:id="@+id/order3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taking order via wa/telfon"
+                    android:layout_column="0" />
+                <CheckBox
+                    android:id="@+id/order4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pembeli datang"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Apakah outlet memiliki pendingin ? (Boleh pilih lebih dari 1)"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="16dp" />
+                <CheckBox
+                    android:id="@+id/chiller1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White Chiller"
+                    android:layout_column="0" />
+                <CheckBox
+                    android:id="@+id/chiller2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Chiller/ Chiller Danone(AQUA, Mizone, dll)"
+                    android:layout_column="1" />
+                <CheckBox
+                    android:id="@+id/chiller3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freezer (Es Krim, dll)"
+                    android:layout_column="0" />
+                <CheckBox
+                    android:id="@+id/chiller4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Competitor Chiller (C*la, Y*kult, The P*c*k)"
+                    android:layout_column="1" />
+                <CheckBox
+                    android:id="@+id/chiller5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak ada Chiller"
+                    android:layout_column="1"
+                    android:layout_marginBottom="36dp"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearbutton"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:cardElevation="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/batal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/selanjutnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Selanjutnya"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

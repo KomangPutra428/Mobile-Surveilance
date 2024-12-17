@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#0A0A0A"
+                    />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status Survei :"
+                    android:textSize="12sp"
+                    android:textColor="#616161"
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/kosong"
+                    app:chipStrokeWidth="1dp"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:text="SURVEI KOSONG"
+                    app:chipStrokeColor="#FDCD69"
+                    android:backgroundTint="#FFF9ED"
+                    android:textColor="#FF9900"
+                    android:layout_marginLeft="5dp"
+                    app:chipCornerRadius="3dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/ideal"
+                    app:chipStrokeWidth="1dp"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    app:chipStrokeColor="#B9EED0"
+                    android:backgroundTint="#E8FFF2"
+                    android:textColor="#2ECC71"
+                    android:text="SPACE IDEAL"
+                    android:layout_marginLeft="5dp"
+                    app:chipCornerRadius="3dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/tidak_ideal"
+                    app:chipStrokeWidth="1dp"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    app:chipStrokeColor="#FEC0C0"
+                    android:backgroundTint="#FFF1F1"
+                    android:textColor="#FB4141"
+                    android:text="SPACE TIDAK IDEAL"
+                    android:layout_marginLeft="5dp"
+                    app:chipCornerRadius="3dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tvip.surveylance">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_NETWORK_USAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="Mobile Surveillance"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:icon">
+        <activity
+            android:name=".detail_kompetitor"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".list_all_details"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".list_survey_kompetitor"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".draft_kompetitor"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".detail_memento"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".tambah_memento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_memento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".berhasil_rasio_galon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_galon_kosong"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_galon_kosong"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_pencatatan_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pencatatan_outlet"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".list_foto_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".total_pelanggan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".penjualan_produk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_gudang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kondisi_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".foto_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".armada_operasional"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tren_penjualan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pelanggan_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".penjualan_produk_lain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".history_penjualan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mapping_outlet"
+            android:label="@string/title_activity_mapping_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gudang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile_outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_survey"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_complete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_npwp_ulang"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_ktp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_pelanggan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".status_complete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_npwp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tampilandokumen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login_version"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".e_card"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_pelanggan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".upload_npwp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".upload_ktp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
